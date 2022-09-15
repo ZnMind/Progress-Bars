@@ -2,15 +2,103 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Title {
+  color: black;
+  font-size: calc(10px + 2vmin);
+  margin-bottom: 2vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Currency {
+  border: 1px solid gray;
+  width: 50vh;
+  display: block;
+  justify-content: center;
+}
+
+.Column {
+  margin: 2vh;
+  margin-bottom: 4.8vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Amount {
+  
+  margin: 2.2vh;
+  margin-bottom: 4.6vh;
+  font-size: calc(2vh);
+  display: flex;
+  justify-content: center;
+}
+
+.par {
+  margin-left: 1vh;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+}
+
+.Bar-container {
+  border: 1px solid gray;
+  height: 80vh;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-flow: column wrap;
+  margin: auto;
+}
+
+.Bar {
+  border: 1px solid black;
+  width: 60vh;
+  height: 5vh;
+  margin: 2vh;
+}
+
+#redBar, #greenBar, #blueBar, #cyanBar, #magentaBar, #yellowBar, #blackBar {
+  height: 100%;
+  width: 0%;
+}
+
+#redBar {
+  background-color: red;
+}
+
+#greenBar {
+  background-color: green;
+}
+
+#blueBar {
+  background-color: blue;
+}
+
+#cyanBar {
+  background-color: cyan;
+}
+
+#magentaBar {
+  background-color: magenta;
+}
+
+#yellowBar {
+  background-color: yellow;
+}
+
+#blackBar {
+  background-color: black;
+}
+
+.Unlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#unlockBtn, #unlockTxt, #blueBtn, #pblue, #cyanBtn, #pcyan, #magentaBtn, #pmagenta, #yellowBtn, #pyellow, #blackBtn, #pblack {
+  visibility: hidden;
 }
 
 .App-header {
@@ -22,17 +110,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
