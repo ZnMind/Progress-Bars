@@ -7,7 +7,14 @@ const App = () => {
   var gameData = { devMode: false }
 
   class Color {
-    constructor(name, amount, upgrade, cost, progress, unlock) {
+    constructor(
+      name, 
+      amount, 
+      upgrade, 
+      cost, 
+      progress, 
+      unlock
+      ) {
       this.name = name;
       this.amount = amount;
       this.upgrade = upgrade;
@@ -52,6 +59,7 @@ const App = () => {
       return this.progress;
     }
   }
+
   var red = new Color("red", 0, 1, 5, 0, 10);
   var green = !gameData.devMode ? new Color("green", 0, 10, 5, 0, 10) : new Color("green", 0, 50, 5, 0, 10);
   var blue = !gameData.devMode ? new Color("blue", 0, 10, 5, 0, 10) : new Color("blue", 0, 50, 5, 0, 10);
@@ -129,7 +137,7 @@ const App = () => {
     var currency = document.getElementById("redCurrency");
     var bar = document.getElementById("redBar");
     var width = 0;
-    var interval = setInterval(frame, 15);
+    setInterval(frame, 20);
 
     function frame() {
       width += red.upgrade;
